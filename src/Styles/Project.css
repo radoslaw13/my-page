@@ -67,6 +67,7 @@
 
 .project {
   display: inline-block;
+  transition: 2s ease;
 }
 
 .title {
@@ -178,6 +179,28 @@
 .left-arrow:hover {
   transition: 0.5s ease;
   transform: rotate(-45deg) translate(-20px, -20px);
+}
+
+@keyframes go-from-left {
+  from {
+    transform: translate(-200px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes go-from-right {
+  from {
+    transform: translate(200px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1200px) {

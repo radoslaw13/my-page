@@ -51,15 +51,27 @@ class Projects extends Component {
   }
 
   nextProject() {
-    this.setState({
-      currentProject: this.state.currentProject + 1
-    });
+    this.setState(
+      {
+        currentProject: this.state.currentProject + 1
+      },
+      () => {
+        document.getElementById("project").style.cssText =
+          "animation: go-from-left 2s ease 0s 1 normal forwards;";
+      }
+    );
   }
 
   prevProject() {
-    this.setState({
-      currentProject: this.state.currentProject - 1
-    });
+    this.setState(
+      {
+        currentProject: this.state.currentProject - 1
+      },
+      () => {
+        document.getElementById("project").style.cssText =
+          "animation: go-from-right 2s ease 0s 1 normal forwards;";
+      }
+    );
   }
 
   render() {
