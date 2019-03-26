@@ -1,0 +1,85 @@
+.tech-section {
+    height: 100vh;
+}
+
+.tech-wrapper {
+    margin-top: 35vh;
+}
+.animate0 {
+    animation: icon-animation 1.5s;
+    animation-fill-mode: backwards;
+}
+.animate1 {
+    animation: icon-animation 1.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+}
+.animate2 {
+    animation: icon-animation 1.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+}
+.animate3 {
+    animation: icon-animation 1.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 1.5s;
+}
+.animate4 {
+    animation: icon-animation 1.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+}
+.animate5 {
+    animation: icon-animation 1.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 2.5s;
+}
+.animate6 {
+    animation: icon-animation 1.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 3s;
+}
+
+.icon-wrapper {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    display: inline-block;
+    margin: 0 1vw 0 1vw;
+}
+
+.icon {
+    display: block;
+    height: 96px;
+}
+
+
+@keyframes icon-animation {
+    from {
+        transform: translate(-200px, -100px) rotate(0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0) rotate(1800deg);
+        opacity: 1;
+    }
+}
+
+.tech-header {
+    opacity: 0;
+}
+
+.header-animation {
+    animation: header-animation 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header-animation {
+    from {
+        transform: scale(0,0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1,1);
+        opacity: 1;
+    }
+}

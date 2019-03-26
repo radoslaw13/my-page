@@ -1,28 +1,73 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Menu from "./Components/Menu";
+import AboutSection from "./Components/AboutSection";
+import { connect } from "react-redux";
+import { changeLang } from "./store/actions";
+import Technologies from "./Components/Technologies";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import "./App.css";
 
 class App extends Component {
+  changeToPL() {
+    this.props.changeLang("pl");
+  }
+
+  changeToEN() {
+    this.props.changeLang("en");
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
+        <Menu data={this.props.content.page.menu} />
+        <AboutSection data={this.props.content.page.aboutMe} />
+        <Technologies data={this.props.content.page.tech} />
+        <Projects data={this.props.content.page.projects} />
+        <Contact data={this.props.content.page.contact} />
+        <div className="lang-wrapper">
+          <p
+            className={
+              this.props.content.lang === "pl"
+                ? "lang-button lang-button-active"
+                : "lang-button"
+            }
+            onClick={() => {
+              this.changeToPL();
+            }}
           >
-            Learn React
-          </a>
-        </header>
+            PL
+          </p>
+          <p
+            className={
+              this.props.content.lang === "en"
+                ? "lang-button lang-button-active"
+                : "lang-button"
+            }
+            onClick={() => {
+              this.changeToEN();
+            }}
+          >
+            EN
+          </p>
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = (state, props) => {
+  return {
+    content: state.content
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    changeLang: language => dispatch(changeLang(language))
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);

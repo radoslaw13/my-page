@@ -1,0 +1,151 @@
+.about-section {
+    height: 100vh;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+.basic-info-wrapper {
+    display: inline-block;
+    margin-top: 30vh;
+}
+  
+.basic-info-wrapper-more {
+    animation: transform-to-more 2s;
+    animation-fill-mode: forwards;
+}
+
+.basic-info-wrapper-less {
+animation: transform-to-less 2s;
+}
+
+@keyframes transform-to-more {
+from {
+    transform: translate(0, 0);
+}
+to {
+    transform: translate(0, -100px);
+}
+}
+
+@keyframes transform-to-less {
+from {
+    transform: translate(0, -100px);
+}
+to {
+    transform: translate(0, 0);
+}
+}
+
+.my-name {
+    margin: 5px;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.more-button {
+    animation-fill-mode: forwards;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: white;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    min-height: 30px;
+    font-size: large;
+    cursor: pointer;
+    opacity: 0;
+    letter-spacing: 3px;
+    padding: 5px 10px;
+}
+
+.more-button:hover {
+    box-shadow: 0px 0px 25px #ffffff;
+}
+
+@keyframes more-button-transform {
+from {
+    opacity: 0;
+    transform: scale(0,0)
+}
+to {
+    opacity: 1;
+    transform: scale(1,1)
+}
+}
+
+.header-about {
+    margin: 5px;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes header-transform {
+from { 
+    transform: rotate(0deg) scale(0, 1);
+    opacity: 0;
+}
+to { 
+    transform: rotate(1080deg) scale(1, 1);
+    opacity: 1;
+}
+}
+
+.text-from-right {
+    margin: 5px;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes text-from-right-transform {
+from { 
+    transform: translate(100px, 0px);
+    opacity: 0; 
+}
+to { 
+    transform: translate(0px, 0px);
+    opacity: 1; 
+}
+}
+
+.text-from-left {
+    margin: 5px;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes text-from-left-transform {
+from { 
+    transform: translate(-100px, 0px);
+    opacity: 0; 
+}
+to { 
+    transform: translate(0px, 0px);
+    opacity: 1; 
+}
+}
+
+.more-wrapper {
+    max-width: 40vw;
+    display: block;
+    animation: more-wrapper-transform 2s;
+    margin: 0 auto;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 600px) {
+    .more-wrapper {
+        max-width: none;
+        margin: 3vh auto;
+    }
+}
+
+@keyframes more-wrapper-transform {
+from { 
+    transform: scale(0,0);
+    opacity: 0; 
+}
+to { 
+    transform: scale(1,1);
+    opacity: 1; 
+}
+}

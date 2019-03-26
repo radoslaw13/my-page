@@ -1,0 +1,84 @@
+[
+  {
+    "lang": "en",
+    "page": {
+      "menu": {
+        "about": "About me",
+        "tech": "Technologies",
+        "proj": "Projects",
+        "contact": "Contact"
+      },
+      "aboutMe": {
+        "header": "About me",
+        "myName": "My name is Radek",
+        "looking": "I'm looking for a job or an internship",
+        "wannaBe": "I wanna be front-end developer",
+        "more": "MORE",
+        "less": "LESS",
+        "moreInfo": "My journey with programming started about six months ago, and I know that this is just beginning. \n I'm very enthusiastic with learning new front-end solutions and getting experience in this field. I'm motivated to increase my programming skills and I hope that I will be able to do that, working as front-end developer."
+      },
+      "tech": {
+        "header": "I work with following technologies"
+      },
+      "projects": [
+        {
+          "title": "Web page of fire department",
+          "subtitle": "I'm volunteer firefighter in my hometown so I decided to create simple web page about my fire department.",
+          "label": "Page contains information about our activity, history, equipment, etc. \n There is a panel admin where we can create, update and delete articles which are stored on Parse Server."
+        },
+        {
+          "title": "Simply weather-app",
+          "subtitle": "This application let us to check weather forecast for current conditions, 12 hours and 5 days.",
+          "label": "Application use AccuWeather API to get weather data."
+        }
+      ],
+      "contact": {
+        "title": "If you have any questions, contact me!",
+        "yourMail": "Your email",
+        "contactMe": "Contact me!",
+        "button": "SEND MESSAGE"
+      }
+    }
+  },
+  {
+    "lang": "pl",
+    "page": {
+      "menu": {
+        "about": "O mnie",
+        "tech": "Technologie",
+        "proj": "Projekty",
+        "contact": "Kontakt"
+      },
+      "aboutMe": {
+        "header": "O mnie",
+        "myName": "Mam na imię Radek",
+        "looking": "Szukam pierwszej pracy lub stażu",
+        "wannaBe": "Chcę zostać front-end deweloperem",
+        "more": "WIĘCEJ",
+        "less": "MNIEJ",
+        "moreInfo": "Moja przygoda z programowaniem rozpoczęła się około sześciu miesięcy temu i wiem, że to dopiero jej początek. Nauka programowania webowego daje mi wiele satysfakcji i jestem entuzjastycznie nastawiony do poznawania nowych rozwiązań. Chcę rozwijać swoje umiejętności w dziedzienie programowania pracując jako front-end deweloper."
+      },
+      "tech": {
+        "header": "Pracuje z następującymi technologiami:"
+      },
+      "projects": [
+        {
+          "title": "Strona internetowa jednostki OSP",
+          "subtitle": "W mojej rodzinnej miejscowości jestem strażakiem ochotnikiem, dlatego zdecydowałem się stworzyć krótką stronę o mojej jednostce",
+          "label": "Strona zawiera informacje o naszej działalności, historii, wyposażeniu itp. \n Zarządzanie stroną obdywa się na panelu admina, gdzie możemy tworzyć, aktualizować i usuwać artykuły przechowywane na Parse Server."
+        },
+        {
+          "title": "Prosta aplikacja pogodowa",
+          "subtitle": "Aplikacja pozwala sprawdzić obecną pogodę, oraz prognozę na 12 godzin i 5 dni.",
+          "label": "Dane pobierane są z serwisu AccuWeather za pomocą udostępnionego API"
+        }
+      ],
+      "contact": {
+        "title": "Jeśli masz jakieś pytnia, napisz do mnie!",
+        "yourMail": "Twój e-mail",
+        "contactMe": "Napisz do mnie!",
+        "button": "WYŚLIJ"
+      }
+    }
+  }
+]
