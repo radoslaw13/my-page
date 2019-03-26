@@ -192,6 +192,17 @@
   }
 }
 
+@keyframes go-away-left {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-200px, 0);
+    opacity: 0;
+  }
+}
+
 @keyframes go-from-right {
   from {
     transform: translate(200px, 0);
@@ -200,6 +211,17 @@
   to {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+
+@keyframes go-away-right {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(200px, 0);
+    opacity: 0;
   }
 }
 
