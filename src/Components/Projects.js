@@ -1,9 +1,17 @@
 import React, { Component } from "react";
+import proj0 from "../Images/project0.PNG";
 import proj1 from "../Images/project1.PNG";
 import proj2 from "../Images/project2.PNG";
 import "../Styles/Project.css";
 
 const projects = [
+  {
+    demo: "https://radoslaw13.github.io/devel-page/",
+    git: "https://github.com/radoslaw13/devel-page",
+    photo: proj0,
+    technologies: ["ReactJS (React Hooks)", "Bootstrap 4"],
+    technologiesMobile: "ReactJS (React Hooks)/Bootstrap"
+  },
   {
     demo: "https://radoslaw13.github.io/osp-page-project/",
     git: "https://github.com/radoslaw13/osp-page-project",

@@ -22,6 +22,11 @@
       },
       "projects": [
         {
+          "title": "Web page of a fictional IT company.",
+          "subtitle": "On the page we can find information about activity of company, contact information, and made projects.",
+          "label": "It is OnePage application with scrool navigation. The structure is based on RWD technique."
+        },
+        {
           "title": "Web page of fire department",
           "subtitle": "I'm volunteer firefighter in my hometown so I decided to create simple web page about my fire department.",
           "label": "Page contains information about our activity, history, equipment, etc. \n There is a panel admin where we can create, update and delete articles which are stored on Parse Server."
@@ -62,6 +67,11 @@
         "header": "Pracuje z następującymi technologiami:"
       },
       "projects": [
+        {
+          "title": "Strona fikcyjnej firmy branży IT",
+          "subtitle": "Na stronie można znaleźć podstawowe informacje na temat działalności firmy, dane kontaktowe, a także wykonane projekty",
+          "label": "Jest to aplikacja typu OnePage, gdzie za nawigację odpowiada scroll. Strona jest w pełni responsywna i dopasowana do różnych urządzeń."
+        },
         {
           "title": "Strona internetowa jednostki OSP",
           "subtitle": "W mojej rodzinnej miejscowości jestem strażakiem ochotnikiem, dlatego zdecydowałem się stworzyć krótką stronę o mojej jednostce",
