@@ -266,3 +266,31 @@
     bottom: 50%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .left-arrow {
+    height: 25px;
+    width: 25px;
+  }
+
+  .right-arrow {
+    height: 25px;
+    width: 25px;
+  }
+
+  .left-arrow-wrapper {
+    left: -15px;
+  }
+
+  .right-arrow-wrapper {
+    right: -15px;
+  }
+
+  .right-arrow:hover {
+    transform: rotate(45deg) translate(10px, -10px);
+  }
+
+  .left-arrow:hover {
+    transform: rotate(-45deg) translate(-10px, -10px);
+  }
+}
